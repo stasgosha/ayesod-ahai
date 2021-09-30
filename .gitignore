@@ -6,5 +6,5 @@ node_modules/*
 prepros-6.config
 prepros.config
 wp/*
-css/components/*
 css/main.css
+css/components/*
