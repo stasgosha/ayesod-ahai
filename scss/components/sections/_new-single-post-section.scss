@@ -96,7 +96,6 @@
 
 	.default-block{
 		width: 100%;
-		padding: 0 5vw;
 		position: relative;
 
 		&.beige{
@@ -108,8 +107,14 @@
 			margin-left: auto;
 			margin-right: auto;
 
-			&.wide{
-				width: 79.1667vw;
+			@media screen and (min-width: 992px){
+				&.wide{
+					width: 79.1667vw;
+				}
+			}
+
+			@media screen and (max-width: 991px){
+				width: 92vw;
 			}
 		}
 	}
@@ -296,7 +301,12 @@
 		.related-grid{
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 110px;
+			grid-gap: 5.7292vw;
+
+			@media screen and (max-width: 991px){
+				grid-template-columns: 1fr;
+				grid-gap: 8.3333vw;
+			}
 		}
 
 		&.beige{
@@ -591,6 +601,32 @@
 			margin-left: 2.0833vw;
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 1fr;
+		grid-gap: 4vw;
+
+		.block-image{
+			width: 45vw;
+		}
+
+		.block-caption{
+			font-size: 5vw;
+			margin-bottom: 1vw;
+		}
+
+		.block-description{
+			font-size: 4vw;
+		}
+
+		.block-footer{
+			margin-top: 5vw;
+
+			.btn:not(:last-child){
+				margin-left: 5vw;
+			}
+		}
+	}
 }
 
 .horizontal-widget-card{
@@ -672,5 +708,9 @@
 				transform: scale(1.05);
 			}
 		}
+	}
+
+	@media screen and (max-width: 991px){
+		display: none;
 	}
 }
