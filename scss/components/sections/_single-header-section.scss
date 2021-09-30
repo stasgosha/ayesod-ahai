@@ -1,0 +1,54 @@
+.single-header-section{
+	padding: 4.2708vw 8.6458vw 1.1979vw 55.3646vw;
+	position: relative;
+	z-index: 3;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 123.6979vw;
+		height: 10.8854vw;
+		background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2375 209'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M1920.72 208.32C900.67 214.95 477.18 75.52.51 109.37 2.2 104.17 0 0 0 0h1920.72s1020.05 201.7 0 208.32z' fill='%23B9DB86'/%3E%3Cpath d='M810.65 160.12s4.32-17.23 1.72-24.17c-2.44-6.52-55.35-38.91-48.34-49.2 12.66-18.58 37.14 26.21 38.85 28.49 20.7 27.65 3.48-72.84 25.9-71.65 32.46 1.72-7.49 60.83-9.5 83.73-1.06 12.07 42.68-48.3 49.1-35.53 12.68 25.2-18.38 25.26-31.01 36.17-8.89 7.68-19.49 17.54-17.23 35.6.58 4.6-9.5-3.44-9.5-3.44z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h2374.08v208.55H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") no-repeat left bottom / cover;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	&:after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: calc(100% - 10.6854vw);
+		background: #B9DB86;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.page-caption{
+		font-size: 2.0833vw;
+		line-height: 1.3;
+		font-weight: bold;
+		color: #070707;
+		position: relative;
+		z-index: 3;
+	}
+
+	&.beige{
+		background: #fff5e6;
+
+		&:before{
+			background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2375 209'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M1920.72 208.32C900.67 214.95 477.18 75.52.51 109.37 2.2 104.17 0 0 0 0h1920.72s1020.05 201.7 0 208.32z' fill='%23B9DB86'/%3E%3Cpath d='M810.65 160.12s4.32-17.23 1.72-24.17c-2.44-6.52-55.35-38.91-48.34-49.2 12.66-18.58 37.14 26.21 38.85 28.49 20.7 27.65 3.48-72.84 25.9-71.65 32.46 1.72-7.49 60.83-9.5 83.73-1.06 12.07 42.68-48.3 49.1-35.53 12.68 25.2-18.38 25.26-31.01 36.17-8.89 7.68-19.49 17.54-17.23 35.6.58 4.6-9.5-3.44-9.5-3.44z' fill='%23fff5e6'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h2374.08v208.55H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		padding-right: 4vw;
+		padding-left: 4vw;
+		padding-bottom: 11vw;
+
+		.page-caption{
+			font-size: 6.1111vw;
+		}
+	}
+}
