@@ -224,6 +224,36 @@
 	}
 
 	.post-table-block{
+		.block-top{
+			margin-bottom: 0.5vw;
+
+			h2, h3{
+				font-size: 3vw;
+				color: $primary;
+
+				@media screen and (max-width: 991px){
+					font-size: 7vw;
+				}
+			}
+		}
+
+		&.pink{
+			.block-top{
+				h2,h3{
+					color: #313131;
+				}
+			}
+		}
+
+		&.dark,
+		&.green{
+			.block-top{
+				h2,h3{
+					color: #fff;
+				}
+			}
+		}
+
 		table{
 			border: 0;
 			border-collapse: separate;
