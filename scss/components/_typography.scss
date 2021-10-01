@@ -48,6 +48,13 @@ body{
 // }
 
 .tpg{
+	&.dark,
+	&.green,
+	.dark &,
+	.green &{
+		color: #fff;
+	}
+
 	p{
 		@include p;
 		margin-bottom: 1.4em;
@@ -127,6 +134,12 @@ body{
 		}
 	}
 
+	&.pink{
+		ul li:before{
+			background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 22'%3E%3Cpath d='M25 11c0 6-9.4 10.5-15.5 10.5-6 0-9.5-5.4-9.5-11.5C0 4 5.4 0 11.5 0 17.5 0 25 5 25 11z' fill='%23fff'/%3E%3C/svg%3E");
+		}
+	}
+
 	ol{
 		counter-reset: ol;
 
@@ -161,6 +174,7 @@ body{
 		font-size: 1.0417vw;
 		line-height: 1.7;
 		background: #FDD84B;
+		color: #313131;
 
 		> *{
 			position: relative;
@@ -230,10 +244,14 @@ body{
 		}
 	}
 
-	&.beige blockquote{
-		&:before,
-		&:after{
-			background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 836 582'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath fill='%23fff5e6' d='M0 0h836v582H0z'/%3E%3Cpath d='M704.98 572.73c-121.65 13.8-519.64 8.63-578.38 0C67.85 564.1 18.47 527.29 7 421.5-5 311.5.95 203 4.5 167c7.65-77.66 8.7-143.74 159.4-152.37 0 0 378.07-26.69 504.35-7.97 105.58 12.56 126.27 37.1 149.19 112.97C831.6 166.5 836 213.12 836 291c0 195-9.38 267.93-131.02 281.73Z' fill='%23FDD84B'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h836v582H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+	@each $class, $color in $colorsNoHash {
+		&.#{$class} {
+			blockquote{
+				&:before,
+				&:after{
+					background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 836 582'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath fill='%23" + $color + "' d='M0 0h836v582H0z'/%3E%3Cpath d='M704.98 572.73c-121.65 13.8-519.64 8.63-578.38 0C67.85 564.1 18.47 527.29 7 421.5-5 311.5.95 203 4.5 167c7.65-77.66 8.7-143.74 159.4-152.37 0 0 378.07-26.69 504.35-7.97 105.58 12.56 126.27 37.1 149.19 112.97C831.6 166.5 836 213.12 836 291c0 195-9.38 267.93-131.02 281.73Z' fill='%23FDD84B'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Cpath fill='%23fff' d='M0 0h836v582H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+				}
+			}
 		}
 	}
 }
