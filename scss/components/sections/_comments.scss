@@ -6,6 +6,14 @@
 	.comment_title{
 		@include h2;
 		margin-bottom: 1.5vw;
+		color: var(--main-color);
+	}
+
+	--main-color: #313131;
+
+	.dark &,
+	.green &{
+		--main-color: #fff;
 	}
 }
 
@@ -37,7 +45,7 @@
 			font-size: 1.2500vw;
 			line-height: 1.45;
 			font-weight: 600;
-			color: #313131;
+			color: var(--main-color);
 
 			img{
 				width: 6.8750vw;
@@ -64,14 +72,14 @@
 				font-size: 1.2500vw;
 				line-height: 1.45;
 				font-style: normal;
-				color: #313131;
+				color: var(--main-color);
 			}
 		}
 
 		.comment-content{
 			font-size: 1.2500vw;
 			line-height: 1.666;
-			color: #313131;
+			color: var(--main-color);
 			margin-bottom: 1.0417vw;
 		}
 	}
@@ -112,6 +120,7 @@
 
 .comment-respond{
 	margin-top: 4vw;
+	color: var(--main-color);
 
 	@media screen and (max-width: 991px){
 		margin-top: 8vw;
@@ -155,7 +164,7 @@
 
 		input,
 		textarea{
-			border: 0.1042vw solid #58785F;
+			border: 0.1042vw solid var(--main-color);
 			appearance: none;
 			background: transparent;
 			border-radius: 0;
@@ -163,7 +172,7 @@
 			height: 2.6042vw;
 			font-size: 1.25vw;
 			font-weight: 600;
-			color: #58785F;
+			color: var(--main-color);
 			font-family: inherit;
 			outline: none !important;
 			transition: all $t;
@@ -173,7 +182,7 @@
 
 			&::placeholder{
 				opacity: 1;
-				color: #58785F;
+				color: var(--main-color);
 			}
 
 			&:focus{
@@ -196,6 +205,14 @@
 				padding: 3vw;
 				height: 35vw;
 			}
+		}
+	}
+
+	.comment-form-cookies-consent label{
+		color: var(--main-color);
+
+		&:before{
+			border-color: var(--main-color);
 		}
 	}
 

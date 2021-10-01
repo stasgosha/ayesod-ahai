@@ -24,9 +24,9 @@ $(function () {
 
 document.addEventListener('DOMContentLoaded', function(){
 	// TODO: remove
-	$('.new-single-post-section .default-block, .single-header-section').click(function(){
-		$(this).toggleClass('beige');
-	});
+	// $('.new-single-post-section .default-block, .single-header-section').click(function(){
+	// 	$(this).toggleClass('beige');
+	// });
 
 	const isRTL = $('html').attr('dir') == 'rtl';
 	const isMobile = $(window).width() < 992;
