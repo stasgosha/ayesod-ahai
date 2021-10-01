@@ -9,7 +9,7 @@ $color-7:#3f9ba5;
 $color-8:#dbdb73;
 $color-9:#09619e;
 $color-10:#FFF5E6;
-
+$color-form:#707070;
 
 
 $headerMainScreen-1:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1925.89 208.44'%3E%3Cg data-name='Слой 2'%3E%3Cpath d='M1920.72 0H0s2.2 104.16.51 109.37c254.36-18.06 814 43.57 814 43.57s634.39 58.45 1106.17 55.39h5.17V1Z' style='fill:%235c6bb2' data-name='Layer 1'/%3E%3C/g%3E%3C/svg%3E");
@@ -177,6 +177,61 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         }
     }
 }
+
+
+
+.hero-text.color-1{
+    .hero-text__title{
+        color: $color-1 !important;
+    }
+}
+.hero-text.color-2{
+    .hero-text__title{
+        color: $color-2 !important;
+    }
+}
+.hero-text.color-3{
+    .hero-text__title{
+        color: $color-3 !important;
+    }
+}
+.hero-text.color-4{
+    .hero-text__title{
+        color: $color-4 !important;
+    }
+}
+.hero-text.color-5{
+    .hero-text__title{
+        color: $color-5 !important;
+    }
+}
+.hero-text.color-6{
+    .hero-text__title{
+        color: $color-6 !important;
+    }
+}
+.hero-text.color-7{
+    .hero-text__title{
+        color: $color-7 !important;
+    }
+}
+.hero-text.color-8{
+    .hero-text__title{
+        color: $color-8 !important;
+    }
+}
+.hero-text.color-9{
+    .hero-text__title{
+        color: $color-9 !important;
+    }
+}
+.hero-text.color-10{
+    .hero-text__title{
+        color: $color-10 !important;
+    }
+}
+
+
 
 .info.color-1,
 .description.color-1{
@@ -376,11 +431,13 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         background-image: $leafColor-9 !important;
     }
 }
+
 .post-video-block.color-10{
     &::before{
-        background-image: $leafColor-9 !important;
+        background-image: $leafColor-10 !important;
     }
 }
+
 
 
 .contact.color-1{
@@ -434,6 +491,96 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
     } 
 }
 
+.contact-form.color-1 .contact-input,
+.contact-form.color-1 .contact-textarea{
+    background-color: $color-1 !important;
+    color: #fff !important;
+    &::placeholder{
+        color: #fff !important;
+    }
+}
+.contact-form.color-2 .contact-input,
+.contact-form.color-2 .contact-textarea{
+    background-color: $color-2 !important;
+    color: $color-form !important;
+        &::placeholder{
+        color: $color-form !important;
+    }
+}
+.contact-form.color-3 .contact-input,
+.contact-form.color-3 .contact-textarea{
+    background-color: $color-3 !important;
+    color: #fff !important;
+        &::placeholder{
+        color: #fff !important;
+    }
+}
+.contact-form.color-4 .contact-input,
+.contact-form.color-4 .contact-textarea{
+    background-color: $color-4 !important;
+    color: #fff !important;
+        &::placeholder{
+        color: #fff !important;
+    }
+}
+
+.contact-form.color-5 .contact-input,
+.contact-form.color-5 .contact-textarea{
+    background-color: $color-5 !important;
+    color: $color-form !important;
+        &::placeholder{
+        color: $color-form !important;
+    }
+}
+
+.contact-form.color-6 .contact-input,
+.contact-form.color-6 .contact-textarea{
+    background-color: $color-6 !important;
+    color: $color-form !important;
+        &::placeholder{
+        color: $color-form !important;
+    }
+}
+
+
+.contact-form.color-7 .contact-input,
+.contact-form.color-7 .contact-textarea{
+    background-color: $color-7 !important;
+    color: $color-form !important;
+        &::placeholder{
+        color: $color-form !important;
+    }
+}
+
+
+.contact-form.color-8 .contact-input,
+.contact-form.color-8 .contact-textarea{
+    background-color: $color-8 !important;
+    color: $color-form !important;
+        &::placeholder{
+        color: $color-form !important;
+    }
+}
+
+
+.contact-form.color-9 .contact-input,
+.contact-form.color-9 .contact-textarea{
+    background-color: $color-9 !important;
+    color: #fff !important;
+        &::placeholder{
+        color: #fff !important;
+    }
+}
+
+.contact-form.color-10 .contact-input,
+.contact-form.color-10 .contact-textarea{
+    background-color: $color-10 !important;
+    color: $color-form !important;
+        &::placeholder{
+        color: $color-form !important;
+    }
+}
+
 
 
 
@@ -454,10 +601,11 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
             position: absolute;
             background-image:$headerMainScreen-1; 
             background-repeat: no-repeat;
+            background-size: cover;
             top: 0;
             left: 0;
             width: 100%;
-            height: 210px;
+            height: 218px;
         }
         &::after{
             content: "";
@@ -470,6 +618,35 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
             background-repeat: no-repeat;
         }
     }
+
+
+    @media (max-width:1200px) {
+        .hero{
+            .hero-header{
+                top: 30px;
+            }
+        }    
+    }
+    
+    @media (max-width:700px) {
+        .hero{
+            .hero-header{
+                right: 20px;
+            }
+        }    
+    }
+
+        
+    @media (max-width:400px) {
+        .hero{
+            .hero-header{
+                h1{
+                    font-size: 35px;
+                }
+            }
+        }    
+    }
+
 
     .hero-header{
         position: absolute;
@@ -506,6 +683,43 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         position: relative;
         z-index: 2;
     }
+
+    @media (max-width:800px) {
+        .hero{
+            padding-bottom: 100px;
+
+
+            &::after{
+                bottom: 224px;
+            }
+            .hero-text{
+                padding-right: 0;
+                padding-top: 89px;
+            }
+            .hero-text__title{
+                font-size: 200px;
+            }
+        }
+    }
+
+    @media (max-width:500px) {
+        .hero{
+            padding-bottom: 30px;
+
+
+            &::after{
+                bottom: 85px;
+            }
+            .hero-text__title{
+                font-size: 136px;
+            }
+            .hero-text__subtitle{
+                font-size: 35px;
+            }
+        }
+    }
+
+
     .hero-text__title {
         color: $color-1;
         font-family: 'Gulash';
@@ -522,7 +736,7 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
     }
 
     .info {
-        padding-top: 71px;
+        padding-top: 26px;
         padding-bottom: 133px;
         position: relative;
         background-color: $color-4;
@@ -537,9 +751,14 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         }
     }
     .info-wrapper{
+        padding-top: 45px;
         max-width: 988px;
         margin: 0 auto;
     }
+
+
+
+
     .info-title {
         font-family: "Assistant";
         font-weight: bold;
@@ -558,6 +777,28 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         font-size: 24px;
         line-height: 1.41;
     }
+
+
+    @media (max-width:1200px) {
+        .info {
+            .info-wrapper{
+                padding-top: 90px;
+            }
+        }
+    }
+
+    @media (max-width:400px) {
+        .info-title{
+            font-size: 25px;
+        }
+        .info-subtitle,
+        .info-item {
+            font-size: 18px;
+        }
+    }
+
+
+
     .info-item {
         position: relative;
         padding-right: 40px;
@@ -623,6 +864,34 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         height: 579px;
     }
 
+
+
+    @media (max-width:1700px) {
+        .new-single-post-section .video-card .card-image{
+            height: 100%;
+        }
+    }
+
+    @media (max-width:1100px) {
+        .new-single-post-section .post-video-block::before{
+            right: 0;
+        }
+    }
+
+    
+    @media (max-width:800px) {
+        .new-single-post-section .default-block > .block-inner{
+            width: 100% !important;  
+        }
+
+        .new-single-post-section .post-video-block::before{
+            display: none;
+        }
+        .new-single-post-section .card-content .video-card .card-tex{
+            font-size: 18px;
+        }
+    }
+
     .video-card .card-caption{
         font-size: 36px;
     }
@@ -657,6 +926,20 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         line-height: 1.325;
         margin-bottom: 15px;
     }
+
+
+    @media (max-width:700px) {
+        .description-title{
+            font-size: 28px;
+        } 
+        .description .description-subtile, 
+        .description .description-item {
+            font-size: 20px;
+        } 
+    }
+
+
+
     .description-subtile{
        margin-bottom: 25px; 
     }
@@ -715,6 +998,24 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         max-width: 1127px;
         margin: 0 auto;
     }
+
+
+    @media (max-width:1350px) {
+        .contact-wrapper{
+            padding: 0 90px;
+        }
+    }
+    
+    @media (max-width:700px) {
+        .contact-wrapper{
+            padding: 0 60px;
+        }
+    }
+    @media (max-width:400px) {
+        .contact-wrapper{
+            padding: 0 40px;
+        }
+    }
     .contact-title {
         color: #FC4C4D;
         margin-bottom: 30px;
@@ -741,11 +1042,13 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         font-size: 30px;
         line-height: 1;
         font-weight: 400;
+        color: $color-form;
 
         &::placeholder{
             font-family: "Assistant";
             font-size: 30px;
             font-weight: 400;
+            color: $color-form;
         }
     }
 
@@ -774,5 +1077,59 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
         margin-right: auto;
     }
 
+    @media (max-width:780px) {
+        .contact{
+            .contact-title{
+                font-size: 50px;
+            }
 
+            .contact-input,
+            .contact-textarea{
+                font-size: 20px;
+        
+                &::placeholder{
+                    font-size: 20px;
+                }
+            }
+            .contact-btn{
+                font-size: 20px;
+            }
+        }   
+    }
+}
+
+@media (max-width:500px) {
+    .contact{
+        .contact-title{
+            font-size: 50px;
+        }
+
+        .contact-input,
+        .contact-textarea{
+            font-size: 20px;
+    
+            &::placeholder{
+                font-size: 20px;
+            }
+        }
+        .contact-btn{
+            font-size: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }   
+}
+@media (max-width:400px) {
+    .contact{
+        .contact-wrapper{
+            .contact-title{
+                font-size: 30px;
+            }
+            .contact-title strong {
+                font-size: 30px;
+            }
+        }
+    } 
 }
