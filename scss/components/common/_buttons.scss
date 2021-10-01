@@ -1,4 +1,6 @@
-.btn{
+.btn,
+.comment-reply-link,
+.button{
 	text-align: center;
 	padding: 0 16px;
 	font-size: 1.0417vw;
@@ -65,5 +67,16 @@
 
 	@media screen and (max-width: 991px){
 		font-size: 4.1667vw;
+	}
+}
+
+.comment-reply-link,
+.button{
+	border-radius: 1.6272vw;
+	background: #5e7a2e;
+
+	&:before,
+	&:after{
+		display: none;
 	}
 }
