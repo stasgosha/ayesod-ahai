@@ -23,11 +23,6 @@ $(function () {
 
 
 document.addEventListener('DOMContentLoaded', function(){
-	// TODO: remove
-	// $('.new-single-post-section .default-block, .single-header-section').click(function(){
-	// 	$(this).toggleClass('beige');
-	// });
-
 	const isRTL = $('html').attr('dir') == 'rtl';
 	const isMobile = $(window).width() < 992;
 
@@ -51,12 +46,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	} else{
 		$('body').addClass('no-touch');
 	}
-
-	$(document).on('keyup', function(e){
-		if (e.keyCode == 83) {
-			$('body').toggleClass('with-overlay');
-		}
-	});
 
 	const toggleAccordion = (el) => {
 		let closeText = 'Show less';

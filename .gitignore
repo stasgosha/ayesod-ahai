@@ -7,4 +7,5 @@ prepros-6.config
 prepros.config
 wp/*
 css/main.css
+css/themes.css
 css/components/*
