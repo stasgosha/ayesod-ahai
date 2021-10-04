@@ -1,9 +1,11 @@
-.btn{
+.btn,
+.comment-reply-link,
+.button{
 	text-align: center;
-	padding: 0 16px;
+	padding: 0 1.1834vw;
 	font-size: 1.0417vw;
-	min-height: 22px;
-	line-height: 22px;
+	min-height: 1.6272vw;
+	line-height: 1.6272vw;
 	font-weight: 600;
 	display: inline-flex;
 	align-items: center;
@@ -16,7 +18,7 @@
 	box-shadow: none;
 	color: #fff;
 	position: relative;
-	min-width: 80px;
+	min-width: 5.9172vw;
 
 	&:before,
 	&:after{
@@ -65,5 +67,20 @@
 
 	@media screen and (max-width: 991px){
 		font-size: 4.1667vw;
+		padding: 0 4.4444vw;
+		min-height: 6.1111vw;
+		line-height: 6.1111vw;
+		min-width: 22.2222vw;
+	}
+}
+
+.comment-reply-link,
+.button{
+	border-radius: 1.6272vw;
+	background: #5e7a2e;
+
+	&:before,
+	&:after{
+		display: none;
 	}
 }

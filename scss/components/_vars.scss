@@ -24,3 +24,20 @@ $body-bg: #fff; // site background
 $t: .3s; // animation duration
 $r: 0.3125vw; // default border radius
 $shadow: unset; // default card shadow
+
+// New single
+$colors: (
+	white: #fff,
+	beige: #FFF5E6,
+	pink: #fc6a6b,
+	green: #1b7a59,
+	dark: #122825
+);
+
+$colorsNoHash: (
+	white: 'fff',
+	beige: 'FFF5E6',
+	pink: 'fc6a6b',
+	green: '1b7a59',
+	dark: '122825'
+);

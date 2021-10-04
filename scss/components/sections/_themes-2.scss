@@ -1,11 +1,4 @@
 
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-
-
-
-
-
-=======
 $color-1:#5c6bb2;
 $color-2:#efcfca;
 $color-3:#190e40;
@@ -17,7 +10,7 @@ $color-8:#dbdb73;
 $color-9:#09619e;
 $color-10:#FFF5E6;
 $color-form:#707070;
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
+$color-formDark:#030303;
 
 
 $headerMainScreen-1:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1925.89 208.44'%3E%3Cg data-name='Слой 2'%3E%3Cpath d='M1920.72 0H0s2.2 104.16.51 109.37c254.36-18.06 814 43.57 814 43.57s634.39 58.45 1106.17 55.39h5.17V1Z' style='fill:%235c6bb2' data-name='Layer 1'/%3E%3C/g%3E%3C/svg%3E");
@@ -84,213 +77,108 @@ $line-narrow-10:url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='htt
 
 
 
-
-
-
-
-$color-1:#5c6bb2;
-$color-2:#efcfca;
-$color-3:#190e40;
-$color-4:#fcb81a;
-$color-5:#b3dece;
-$color-4:#fcb81a;
-$color-6:#ace8ff;
-$color-7:#3f9ba5;
-$color-8:#dbdb73;
-$color-9:#09619e;
-$color-10:#FFF5E6;
-$color-form:#707070;
-
-
-/*====================themse-1=========================*/
-    .themse-1.default-block .hero{
-        &::before{
-            background-image:$headerMainScreen-1; 
-        }
-    }
-
-    .themse-1.default-block .hero-text{
-        .hero-text__title{
-            color: $color-1;
-        }
-    }
-
-    .themse-1.default-block .info{
-        background-color: $color-4;
-
-
-        li::before{
-            background-image: $bullet-4;
-        }
-    }
-
-    .themse-1.default-block .new-single-post-section{
-        &::after{
-            background-image: $lineLeft-4;
-        }
-    }
-
-
-    .themse-1.default-block .post-video-block{
-        &::before{
-            background-image: $leafColor-1;
-        }
-    }
-
-    .themse-1.default-block .description{
-        background-color: $color-1;
-        li::before{
-            background-image: $bullet-4;
-        }
-    }
-
-    .themse-1.default-block .contact{
-        &::after{
-            background-image: $line-narrow-10;
-        }
-
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-10;
-            color: $color-form;
-    
-            &::placeholder{
-                color: $color-form;
-            }
-        }
-
-    }
-/*====================/themse-1=========================*/
-
-
-/*====================themse-2=========================*/
-.themse-2.default-block .hero{
+.hero.color-1{
     &::before{
-        background-image:$headerMainScreen-9; 
+        background-image: $headerMainScreen-1 !important;
+    }
+
+    .hero-header{
+        h1{
+            color: #fff !important;
+        }
     }
 }
-
-.themse-2.default-block .hero-text{
-    .hero-text__title{
-        color: $color-9;
-    }
-}
-
-.themse-2.default-block .info{
-    background-color: $color-8;
-
-
-    li::before{
-        background-image: $bullet-8;
-    }
-}
-
-.themse-2.default-block .new-single-post-section{
-    &::after{
-        background-image: $lineLeft-4;
-    }
-}
-
-
-.themse-2.default-block .post-video-block{
+.hero.color-2{
     &::before{
-        background-image: $leafColor-9;
+        background-image: $headerMainScreen-2 !important;
+    }
+        .hero-header{
+        h1{
+            color: #313131 !important;
+        }
+    }
+}
+.hero.color-3{
+    &::before{
+        background-image: $headerMainScreen-3 !important;
+    }
+        .hero-header{
+        h1{
+            color: #fff !important;
+        }
+    }
+}
+.hero.color-4{
+    &::before{
+        background-image: $headerMainScreen-4 !important;
+    }
+        .hero-header{
+        h1{
+            color: #313131 !important;
+        }
+    }
+}
+.hero.color-5{
+    &::before{
+        background-image: $headerMainScreen-5 !important;
+    }
+        .hero-header{
+        h1{
+            color: #313131 !important;
+        }
+    }
+}
+.hero.color-6{
+    &::before{
+        background-image: $headerMainScreen-6 !important;
+    }
+        .hero-header{
+        h1{
+            color: #313131 !important;
+        }
+    }
+}
+.hero.color-7{
+    &::before{
+        background-image: $headerMainScreen-7 !important;
+    }
+        .hero-header{
+        h1{
+            color: #313131 !important;
+        }
+    }
+}
+.hero.color-8{
+    &::before{
+        background-image: $headerMainScreen-8 !important;
+    }
+        .hero-header{
+        h1{
+            color: #313131 !important;
+        }
+    }
+}
+.hero.color-9{
+    &::before{
+        background-image: $headerMainScreen-9 !important;
+    }
+        .hero-header{
+        h1{
+            color: #fff !important;
+        }
+    }
+}
+.hero.color-10{
+    &::before{
+        background-image: $headerMainScreen-10 !important;
+    }
+        .hero-header{
+        h1{
+            color: #fff !important;
+        }
     }
 }
 
-.themse-2.default-block .description{
-    background-color: $color-9;
-    li::before{
-        background-image: $bullet-9;
-    }
-}
-
-.themse-2.default-block .contact{
-    &::after{
-        background-image: $line-narrow-9;
-    }
-
-    .contact-input,
-    .contact-textarea{
-        background-color: $color-8;
-        color: #000;
-
-        &::placeholder{
-            color: #000;
-        }
-    }
-
-}
-/*====================/themse-2=========================*/
-
-
-.page-content.themse-1.default-block{
-    .hero-bg--themes-1{
-        display: block;
-    }
-    .hero-bg--themes-2{
-        display: none;
-    }
-}
-
-.themse-1{
-
-
-
-
-    .default-block.hero.blue{
-        &::before{
-            background-image:$headerMainScreen-1; 
-        }
-    }
-    .default-block.hero.light{
-        &::before{
-            background-image:$headerMainScreen-2; 
-        }
-    }
-    .default-block.hero.purple{
-        &::before{
-            background-image:$headerMainScreen-3; 
-        }
-    }
-    .default-block.hero.orange{
-        &::before{
-            background-image:$headerMainScreen-4; 
-        }
-    }
-    .default-block.hero.lightGreen{
-        &::before{
-            background-image:$headerMainScreen-5; 
-        }
-    }
-
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-    .hero-text.default-block.blue{
-        .hero-text__title{
-            color:$color-1; 
-        }
-    }
-    .hero-text.default-block.light{
-        .hero-text__title{
-            color:$color-2; 
-        }
-    }
-    .hero-text.default-block.purple{
-        .hero-text__title{
-            color:$color-3; 
-        }
-    }
-    .hero-text.default-block.orange{
-        .hero-text__title{
-            color:$color-4; 
-        }
-    }
-    .hero-text.default-block.lightGreen{
-        .hero-text__title{
-            color:$color-5; 
-        }
-    }
-=======
 
 
 .hero-text.color-1{
@@ -346,514 +234,218 @@ $color-form:#707070;
 
 
 
+
+
+
+
+
+
+
+
 .info.color-1,
 .description.color-1{
     background-color: $color-1 !important;
     color: #fff !important;
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
 
-    .info.default-block.blue{
-        background-color: $color-1;
-    
-    
-        li::before{
-            background-image: $bullet-1;
-        }
-    }
-    .info.default-block.light{
-        background-color: $color-2;
-    
-    
-        li::before{
-            background-image: $bullet-2;
-        }
-    }
-    .info.default-block.purple{
-        background-color: $color-3;
-    
-    
-        li::before{
-            background-image: $bullet-3;
-        }
-    }
-    .info.default-block.orange{
-        background-color: $color-4;
-    
-    
-        li::before{
-            background-image: $bullet-4;
-        }
-    }
-    .info.default-block.lightGreen{
-        background-color: $color-5;
-    
-    
-        li::before{
-            background-image: $bullet-5;
-        }
-    }
-
-
-
-    .new-single-post-section.default-block.blue{
-        &::after{
-            background-image: $lineLeft-1;
-        }
-    }
-
-    .new-single-post-section.default-block.light{
-        &::after{
-            background-image: $lineLeft-2;
-        }
-    }
-
-    .new-single-post-section.default-block.purple{
-        &::after{
-            background-image: $lineLeft-3;
-        }
-    }
-
-    .new-single-post-section.default-block.orange{
-        &::after{
-            background-image: $lineLeft-4;
-        }
-    }
-
-    .new-single-post-section.default-block.lightGreen{
-        &::after{
-            background-image: $lineLeft-5;
-        }
-    }
-
-    .post-video-block.default-block.blue{
-        &::before{
-            background-image: $leafColor-1;
-        }
-    }
-
-    .post-video-block.default-block.light{
-        &::before{
-            background-image: $leafColor-2;
-        }
-    }
-
-    .post-video-block.default-block.purple{
-        &::before{
-            background-image: $leafColor-3;
-        }
-    }
-
-    .post-video-block.default-block.orange{
-        &::before{
-            background-image: $leafColor-4;
-        }
-    }
-
-    .post-video-block.default-block.lightGreen{
-        &::before{
-            background-image: $leafColor-5;
-        }
-    }
-
-    .description.default-block.blue{
-        background-color: $color-1;
-    
-    
-        li::before{
-            background-image: $bullet-1;
-        }
-    }
-    .description.default-block.light{
-        background-color: $color-2;
-    
-    
-        li::before{
-            background-image: $bullet-2;
-        }
-    }
-    .description.default-block.purple{
-        background-color: $color-3;
-    
-    
-        li::before{
-            background-image: $bullet-3;
-        }
-    }
-    .description.default-block.orange{
-        background-color: $color-4;
-    
-    
-        li::before{
-            background-image: $bullet-4;
-        }
-    }
-    .description.default-block.lightGreen{
-        background-color: $color-5;
-    
-    
-        li::before{
-            background-image: $bullet-5;
-        }
-    }
-
-    .contact.default-block.blue{
-        &::after{
-            background-image: $line-narrow-1;
-        }
-    }
-
-    .contact.default-block.light{
-        &::after{
-            background-image: $line-narrow-2;
-        }
-    }
-
-    .contact.default-block.purple{
-        &::after{
-            background-image: $line-narrow-3;
-        }
-    }
-
-    .contact.default-block.orange{
-        &::after{
-            background-image: $line-narrow-4;
-        }
-    }
-
-    .contact.default-block.lightGreen{
-        &::after{
-            background-image: $line-narrow-5;
-        }
-    }
-
-    .contact-form.default-block.blue{
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-1;
-        }
-    }
-
-    .contact-form.default-block.light{
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-2;
-        }
-    }
-
-    .contact-form.default-block.purple{
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-3;
-        }
-    }
-
-    .contact-form.default-block.orange{
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-4;
-        }
-    }
-
-    .contact-form.default-block.lightGreen{
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-5;
-        }
+    .info-item::before
+    .description-item::before{
+        background-image: $bullet-1 !important;
     }
 }
-
-.page-content.themse-2.default-block{
-    .hero-bg--themes-1{
-        display: none;
+.info.color-2,
+.description.color-2{
+    background-color: $color-2 !important;
+    color: #313131 !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-2 !important;
     }
-    .hero-bg--themes-2{
-        display: block;
+}
+.info.color-3,
+.description.color-3{
+    background-color: $color-3 !important;
+    color: #fff !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-3 !important;
+    }
+}
+.info.color-4,
+.description.color-4{
+    background-color: $color-4 !important;
+    color: #313131 !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-4 !important;
+    }
+}
+.info.color-5,
+.description.color-5{
+    background-color: $color-5 !important;
+    color: #313131 !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-5 !important;
+    }
+}
+.info.color-6,
+.description.color-6{
+    background-color: $color-6 !important;
+    color: #313131 !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-6 !important;
+    }
+}
+.info.color-7,
+.description.color-7{
+    background-color: $color-7 !important;
+    color: #313131 !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-7 !important;
+    }
+}
+.info.color-8,
+.description.color-8{
+    background-color: $color-8 !important;
+    color: #313131 !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-8 !important;
+    }
+}
+.info.color-9,
+.description.color-9{
+    background-color: $color-9 !important;
+    color: #fff !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-9 !important;
+    }
+}
+.info.color-10,
+.description.color-10{
+    background-color: $color-10 !important;
+    color: #313131 !important;
+    
+    .info-item::before,
+    .description-item::before{
+        background-image: $bullet-5 !important;
     }
 }
 
 
-
-.themse-2{
-
-
-
-
-
-    .default-block.hero.orange{
-        &::before{
-            background-image:$headerMainScreen-4; 
-        }
+.new-single-post-section.color-1{
+    &::after{
+        background-image: $lineLeft-1 !important;
     }
-    .default-block.hero.lightBlue{
-        &::before{
-            background-image:$headerMainScreen-6; 
-        }
+}
+.new-single-post-section.color-2{
+    &::after{
+        background-image: $lineLeft-2 !important;
     }
-    .default-block.hero.darkGreen{
-        &::before{
-            background-image:$headerMainScreen-7; 
-        }
+}
+.new-single-post-section.color-3{
+    &::after{
+        background-image: $lineLeft-3 !important;
     }
-    .default-block.hero.lightGreen{
-        &::before{
-            background-image:$headerMainScreen-8; 
-        }
+}
+.new-single-post-section.color-4{
+    &::after{
+        background-image: $lineLeft-4 !important;
     }
-    .default-block.hero.blue{
-        &::before{
-            background-image:$headerMainScreen-9; 
-        }
+}
+.new-single-post-section.color-5{
+    &::after{
+        background-image: $lineLeft-5 !important;
     }
-
-
-
-    .hero-text.default-block.orange{
-        .hero-text__title{
-            color:$color-8; 
-        }
+}
+.new-single-post-section.color-6{
+    &::after{
+        background-image: $lineLeft-6 !important;
     }
-    .hero-text.default-block.lightBlue{
-        .hero-text__title{
-            color:$color-6; 
-        }
+}
+.new-single-post-section.color-7{
+    &::after{
+        background-image: $lineLeft-7 !important;
     }
-    .hero-text.default-block.darkGreen{
-        .hero-text__title{
-            color:$color-7; 
-        }
+}
+.new-single-post-section.color-8{
+    &::after{
+        background-image: $lineLeft-8 !important;
     }
-    .hero-text.default-block.lightGreen{
-        .hero-text__title{
-            color:$color-8; 
-        }
+}
+.new-single-post-section.color-9{
+    &::after{
+        background-image: $lineLeft-9 !important;
     }
-    .hero-text.default-block.blue{
-        .hero-text__title{
-            color:$color-9; 
-        }
+}
+.new-single-post-section.color-10{
+    &::after{
+        background-image: $lineLeft-10 !important;
     }
-
-    .info.default-block.orange{
-        background-color: $color-8;
-    
-    
-        li::before{
-            background-image: $bullet-8;
-        }
-    }
-    .info.default-block.lightBlue{
-        background-color: $color-6;
-    
-    
-        li::before{
-            background-image: $bullet-6;
-        }
-    }
-    .info.default-block.darkGreen{
-        background-color: $color-7;
-    
-    
-        li::before{
-            background-image: $bullet-7;
-        }
-    }
-    .info.default-block.lightGreen{
-        background-color: $color-8;
-    
-    
-        li::before{
-            background-image: $bullet-8;
-        }
-    }
-    .info.default-block.blue{
-        background-color: $color-9;
-    
-    
-        li::before{
-            background-image: $bullet-9;
-        }
-    }
-
-
-
-    .new-single-post-section.default-block.orange{
-        &::after{
-            background-image: $lineLeft-8;
-        }
-    }
-
-    .new-single-post-section.default-block.lightBlue {
-        &::after{
-            background-image: $lineLeft-6;
-        }
-    }
-
-    .new-single-post-section.default-block.darkGreen {
-        &::after{
-            background-image: $lineLeft-7;
-        }
-    }
-
-    .new-single-post-section.default-block.lightGreen{
-        &::after{
-            background-image: $lineLeft-8;
-        }
-    }
-
-    .new-single-post-section.default-block.blue{
-        &::after{
-            background-image: $lineLeft-9;
-        }
-    }
-
-    .post-video-block.default-block.orange{
-        &::before{
-            background-image: $leafColor-8;
-        }
-    }
-
-    .post-video-block.default-block.lightBlue {
-        &::before{
-            background-image: $leafColor-6;
-        }
-    }
-
-    .post-video-block.default-block.darkGreen {
-        &::before{
-            background-image: $leafColor-7;
-        }
-    }
-
-    .post-video-block.default-block.lightGreen{
-        &::before{
-            background-image: $leafColor-8;
-        }
-    }
-
-    .post-video-block.default-block.blue{
-        &::before{
-            background-image: $leafColor-9;
-        }
-    }
-
-    .description.default-block.orange{
-        background-color: $color-8;
-    
-    
-        li::before{
-            background-image: $bullet-8;
-        }
-    }
-    .description.default-block.lightBlue {
-        background-color: $color-6;
-    
-    
-        li::before{
-            background-image: $bullet-6;
-        }
-    }
-    .description.default-block.darkGreen {
-        background-color: $color-7;
-    
-    
-        li::before{
-            background-image: $bullet-7;
-        }
-    }
-    .description.default-block.lightGreen{
-        background-color: $color-8;
-    
-    
-        li::before{
-            background-image: $bullet-8;
-        }
-    }
-    .description.default-block.blue{
-        background-color: $color-9;
-    
-    
-        li::before{
-            background-image: $bullet-9;
-        }
-    }
-
-    .contact.default-block.orange{
-        &::after{
-            background-image: $line-narrow-8;
-        }
-    }
-
-    .contact.default-block.lightBlue     {
-        &::after{
-            background-image: $line-narrow-6;
-        }
-    }
-
-    .contact.default-block.darkGreen  {
-        &::after{
-            background-image: $line-narrow-7;
-        }
-    }
-
-    .contact.default-block.lightGreen {
-        &::after{
-            background-image: $line-narrow-8;
-        }
-    }
-
-    .contact.default-block.blue     {
-        &::after{
-            background-image: $line-narrow-9;
-        }
-    }
-
-    .contact-form.default-block.orange{
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-8;
-        }
-    }
-
-    .contact-form.default-block.lightBlue {
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-6;
-        }
-    }
-
-    .contact-form.default-block.darkGreen {
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-7;
-        }
-    }
-
-    .contact-form.default-block.lightGreen{
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-8;
-        }
-    }
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-
-    .contact-form.default-block.blue     {
-        .contact-input,
-        .contact-textarea{
-            background-color: $color-9;
-        }
-=======
 }
 
+.post-video-block.color-1{
+    &::before{
+        background-image: $leafColor-1 !important;
+    }
+}
+.post-video-block.color-2{
+    &::before{
+        background-image: $leafColor-2 !important;
+    }
+}
+.post-video-block.color-3{
+    &::before{
+        background-image: $leafColor-3 !important;
+    }
+}
+.post-video-block.color-4{
+    &::before{
+        background-image: $leafColor-4 !important;
+    }
+}
+.post-video-block.color-5{
+    &::before{
+        background-image: $leafColor-5 !important;
+    }
+}
+.post-video-block.color-6{
+    &::before{
+        background-image: $leafColor-6 !important;
+    }
+}
+.post-video-block.color-7{
+    &::before{
+        background-image: $leafColor-7 !important;
+    }
+}
+.post-video-block.color-8{
+    &::before{
+        background-image: $leafColor-8 !important;
+    }
+}
+.post-video-block.color-9{
+    &::before{
+        background-image: $leafColor-9 !important;
+    }
+}
 .post-video-block.color-10{
     &::before{
         background-image: $leafColor-10 !important;
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
     }
 }
 
-
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-=======
 
 .contact.color-1{
     &::after{
@@ -905,7 +497,6 @@ $color-form:#707070;
         background-image: $line-narrow-10 !important;
     } 
 }
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
 
 .contact-form.color-1 .contact-input,
 .contact-form.color-1 .contact-textarea{
@@ -918,9 +509,9 @@ $color-form:#707070;
 .contact-form.color-2 .contact-input,
 .contact-form.color-2 .contact-textarea{
     background-color: $color-2 !important;
-    color: $color-form !important;
+    color: $color-formDark !important;
         &::placeholder{
-        color: $color-form !important;
+        color: $color-formDark !important;
     }
 }
 .contact-form.color-3 .contact-input,
@@ -952,32 +543,29 @@ $color-form:#707070;
 .contact-form.color-6 .contact-input,
 .contact-form.color-6 .contact-textarea{
     background-color: $color-6 !important;
-    color: $color-form !important;
+    color: $color-formDark !important;
         &::placeholder{
-        color: $color-form !important;
+        color: $color-formDark !important;
     }
 }
-
 
 .contact-form.color-7 .contact-input,
 .contact-form.color-7 .contact-textarea{
     background-color: $color-7 !important;
-    color: $color-form !important;
+    color: $color-formDark !important;
         &::placeholder{
-        color: $color-form !important;
+        color: $color-formDark !important;
     }
 }
-
 
 .contact-form.color-8 .contact-input,
 .contact-form.color-8 .contact-textarea{
     background-color: $color-8 !important;
-    color: $color-form !important;
+    color: $color-formDark !important;
         &::placeholder{
-        color: $color-form !important;
+        color: $color-formDark !important;
     }
 }
-
 
 .contact-form.color-9 .contact-input,
 .contact-form.color-9 .contact-textarea{
@@ -1001,47 +589,39 @@ $color-form:#707070;
 
 
 
+.themse-2{
 
+    .container{
+        max-width: 1088px;
+        margin: 0 auto;
+    }
 
-
-
-
-
-
-.container{
-    max-width: 56.666666666666664vw;
-    margin: 0 auto;
-}
 
     .hero{
         position: relative;
-        padding-bottom: 3.125vw;
+        padding-bottom: 168px;
         &::before{
             content: "";
             position: absolute;
+            background-image:$headerMainScreen-9; 
             background-repeat: no-repeat;
             background-size: cover;
             top: 0;
             left: 0;
             width: 100%;
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-            height: 11.354166666666666vw;
-=======
             height: 218px;
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
         }
         &::after{
             content: "";
             position: absolute;
-            bottom: 9.635416666666666vw;
+            bottom: 292px;
             left: 0;
             width: 100%;
-            height: 10.416666666666666vw;
+            height: 200px;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1922.001' height='113.413'%3E%3Cg data-name='Компонент 39 – 7'%3E%3Cpath data-name='Контур 87' d='M1921.5 112.913H2.673S-2.213-1.647 2.673.54C311.056 138.597 1921.5 55.121 1921.5 55.121Z' fill='%23fff' stroke='rgba(0,0,0,0)' stroke-miterlimit='10'/%3E%3C/g%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
     }
-
 
     @media (max-width:1200px) {
         .hero{
@@ -1070,15 +650,14 @@ $color-form:#707070;
         }    
     }
 
-
     .hero-header{
         position: absolute;
-        top: 3.90625vw;
-        right: 7.8125vw;
+        top: 75px;
+        right: 150px;
 
         h1{
             font-family: "Assistant";
-            font-size: 2.0833333333333335vw;
+            font-size: 40px;
             line-height: 1.329;
             color: #fff;
         }
@@ -1086,26 +665,27 @@ $color-form:#707070;
     .hero-bg{
 
         .hero-bg--themes-1{
-            display: block;
+            display: none;
         }
         .hero-bg--themes-2{
-            display: none;
+            display: block;
         }
 
 
         img{
-            height: 41.666666666666664vw;
+            height: 800px;
         }
 
     }
 
     .hero-text {
         padding-top: 0px;
-        padding-right: 5.3125vw;
-        margin-top: -4.635416666666667vw;
+        padding-right: 102px;
+        margin-top: -89px;
         position: relative;
         z-index: 2;
     }
+
 
     @media (max-width:800px) {
         .hero{
@@ -1142,55 +722,41 @@ $color-form:#707070;
         }
     }
 
-
     .hero-text__title {
+        color: $color-9;
         font-family: 'Gulash';
         font-weight: 400; 
-        font-size: 13.385416666666666vw;
+        font-size: 257px;
         line-height: 1;
         display: inline-block;
         margin-left: 10px;
     }
     .hero-text__subtitle {
         font-family: "Assistant";
-        font-size: 2.7604166666666665vw;
+        font-size: 53px;
         font-weight: 600;
     }
 
     .info {
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-        padding-top: 1.3541666666666667vw;
-        padding-bottom: 3.125vw;
-=======
         padding-top: 26px;
         padding-bottom: 133px;
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
         position: relative;
+        background-color: $color-8;
 
         &::after{
             content: "";
             position: absolute;
             background-image: url("data:image/svg+xml,%3Csvg data-name='up curve 1' xmlns='http://www.w3.org/2000/svg' width='1920' height='90.043'%3E%3Crect data-name='Прямоугольник 63' width='1920' transform='translate(0 90.043)' fill='%23fff'/%3E%3Cpath data-name='Контур 105' d='M.507 75.463C477 98.543 1919.979 7.985 1920 7.984V0H0v90.043s2.2-11.028.507-14.58Z' fill='%23fff'/%3E%3Crect data-name='Прямоугольник 64' height='82.059' transform='translate(1920 7.984)' fill='%23fff'/%3E%3C/svg%3E");
             width: 100%;
-            height: 4.6875vw;
+            height: 90px;
             top: 0;
         }
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-        .info-wrapper{
-            padding-top: 2.34375vw;
-            max-width: 51.458333333333336vw;
-            margin: 0 auto;
-=======
     }
     .info-wrapper{
         padding-top: 45px;
         max-width: 988px;
         margin: 0 auto;
     }
-
-
-
-
     .info-title {
         font-family: "Assistant";
         font-weight: bold;
@@ -1210,7 +776,6 @@ $color-form:#707070;
         line-height: 1.41;
     }
 
-
     @media (max-width:1200px) {
         .info {
             .info-wrapper{
@@ -1229,8 +794,6 @@ $color-form:#707070;
         }
     }
 
-
-
     .info-item {
         position: relative;
         padding-right: 40px;
@@ -1241,52 +804,16 @@ $color-form:#707070;
             top: 50%;
             transform: translateY(-50%);
             right: 0;
-            background-image: $bullet-4;
+            background-image: $bullet-8;
             background-repeat: no-repeat;
             width: 25px;
             height: 25px;
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
         }
-        h2 {
-            font-family: "Assistant";
-            font-weight: bold;
-            font-size: 1.5625vw;
-            line-height: 1.33;
-            margin-bottom: 0.4166666666666667vw;
+
+
+        &:not(:first-child){
+            margin-top: 35px;
         }
-    
-        p{
-            margin-bottom: 0.9895833333333334vw;
-        }
-        p,
-        li {
-            font-family: "Assistant";
-            font-weight: 400;
-            font-size: 1.25vw;
-            line-height: 1.41;
-        }
-        
-        li {
-            position: relative;
-            padding-right: 2.6041666666666665vw;
-    
-            &::before{
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 0;
-                background-repeat: no-repeat;
-                width: 1.3020833333333333vw;
-                height: 1.3020833333333333vw;
-            }
-    
-    
-            &:not(:first-child){
-                margin-top: 1.8229166666666667vw;
-            }
-        }
-    
     }
 
 
@@ -1302,7 +829,8 @@ $color-form:#707070;
             top: 0;
             left: 0;
             width: 100%;
-            height: 6.197916666666667vw;
+            height: 119px;
+            background-image:$lineLeft-4; 
             background-repeat: no-repeat;
         }
     }
@@ -1312,12 +840,12 @@ $color-form:#707070;
         &::before{
             content: "";
             position: absolute;
-            bottom: -2.3958333333333335vw;
-            right: 4.635416666666667vw;
+            bottom: 0;
+            right: 89px;
+            background-image: $leafColor-9;
             background-repeat: no-repeat;
-            width: 8.385416666666666vw;
-            height: 9.53125vw;
-            z-index: 5;
+            width: 161px;
+            height: 183px;
         }
     }
 
@@ -1328,39 +856,12 @@ $color-form:#707070;
 
 
     .video-card .card-image{
-        height: 30.15625vw;
+        height: 579px;
     }
 
 
-
-    @media (max-width:1700px) {
-        .new-single-post-section .video-card .card-image{
-            height: 100%;
-        }
-    }
-
-    @media (max-width:1100px) {
-        .new-single-post-section .post-video-block::before{
-            right: 0;
-        }
-    }
 
     
-    @media (max-width:800px) {
-        .new-single-post-section .default-block > .block-inner{
-            width: 100%;  
-        }
-
-        .new-single-post-section .post-video-block::before{
-            display: none;
-        }
-        .new-single-post-section .card-content .video-card .card-tex{
-            font-size: 18px;
-        }
-    }
-
-
-
     @media (max-width:1700px) {
         .new-single-post-section .video-card .card-image{
             height: 100%;
@@ -1387,11 +888,12 @@ $color-form:#707070;
         }
     }
 
+
     .video-card .card-caption{
-        font-size: 1.875vw;
+        font-size: 36px;
     }
     .video-card .card-text{
-        font-size: 1.25vw;
+        font-size: 24px;
     }
 
 
@@ -1400,9 +902,10 @@ $color-form:#707070;
 
 
     .description {
+        background-color: $color-9;
         position: relative;
         padding-top: 83px;
-        padding-bottom: 50px;
+        padding-bottom: 140px;
         color: #fff;
         &::after{
             content: "";
@@ -1412,14 +915,6 @@ $color-form:#707070;
             height: 90px;
             top: 0;
         }
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-        h2 {
-            font-family: "Assistant";
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 1.325;
-            margin-bottom: 15px;
-=======
     }
     .description-title {
         font-family: "Assistant";
@@ -1439,7 +934,6 @@ $color-form:#707070;
             font-size: 20px;
         } 
     }
-
 
 
     .description-subtile{
@@ -1466,60 +960,15 @@ $color-form:#707070;
             top: 50%;
             transform: translateY(-50%);
             right: 0;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32.383' height='32.132'%3E%3Cpath data-name='Контур 88' d='M27.095 24.66c2.762-2.048 9.512-8.137 2.888-13.842S16.355 3.99 12.078 7.63 3.634 18.11 10.54 24.542s16.555.118 16.555.118Z' fill='%23fff'/%3E%3C/svg%3E");
+            background-image: $bullet-9;
             background-repeat: no-repeat;
             width: 32px;
             height: 32px;
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
         }
-    
-    
-        // @media (max-width:700px) {
-        //     .description-title{
-        //         font-size: 28px;
-        //     } 
-        //     .description .description-subtile, 
-        //     .description .description-item {
-        //         font-size: 20px;
-        //     } 
-        // }
-    
-    
-    
-        p{
-           margin-bottom: 25px; 
+        
+        &:not(:first-child){
+            margin-top: 20px;
         }
-        p,
-        li{
-            font-family: "Assistant";
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 1.416;
-        }
-        ul{
-            margin-bottom: 20px;
-        }
-        li{
-            font-weight: 600;
-            position: relative;
-            padding-right: 50px;
-    
-            &::before{
-                content: "";
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 0;
-                background-repeat: no-repeat;
-                width: 32px;
-                height: 32px;
-            }
-            
-            &:not(:first-child){
-                margin-top: 20px;
-            }
-        }
-    
     }
 
 
@@ -1534,8 +983,7 @@ $color-form:#707070;
         &::after{
             content: "";
             position: absolute;
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: $line-narrow-9; 
             width: 100%;
             height: 90px;
             top: 0;
@@ -1546,6 +994,7 @@ $color-form:#707070;
         max-width: 1127px;
         margin: 0 auto;
     }
+
 
 
     @media (max-width:1350px) {
@@ -1564,6 +1013,7 @@ $color-form:#707070;
             padding: 0 40px;
         }
     }
+
     .contact-title {
         color: #FC4C4D;
         margin-bottom: 30px;
@@ -1581,6 +1031,7 @@ $color-form:#707070;
     .contact-textarea{
         display: block;
         width: 100%;
+        background-color: $color-8;
         outline: none;
         border: none;
         border-radius: 2px;
@@ -1589,13 +1040,13 @@ $color-form:#707070;
         font-size: 30px;
         line-height: 1;
         font-weight: 400;
-        color: $color-form;
+        color: $color-formDark;
 
         &::placeholder{
             font-family: "Assistant";
             font-size: 30px;
             font-weight: 400;
-            color: $color-form;
+            color: $color-formDark;
         }
     }
 
@@ -1624,6 +1075,7 @@ $color-form:#707070;
         margin-right: auto;
     }
 
+
     @media (max-width:780px) {
         .contact{
             .contact-title{
@@ -1643,16 +1095,6 @@ $color-form:#707070;
             }
         }   
     }
-<<<<<<< HEAD:scss/components/sections/_themes.scss
-
-
-@media (max-width:500px) {
-    .contact{
-        .contact-title{
-            font-size: 50px;
-        }
-
-=======
 }
 
 @media (max-width:500px) {
@@ -1661,7 +1103,6 @@ $color-form:#707070;
             font-size: 50px;
         }
 
->>>>>>> ac6b0d278316462864c45bf326a964719d219913:scss/components/sections/_themes-1.scss
         .contact-input,
         .contact-textarea{
             font-size: 20px;
@@ -1691,3 +1132,6 @@ $color-form:#707070;
         }
     } 
 }
+
+
+
