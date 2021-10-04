@@ -5,6 +5,14 @@
 		font-size: 1.2500vw;
 		line-height: 1.277;
 		margin-bottom: 0.7813vw;
+		position: relative;
+
+		.post-share{
+			position: absolute;
+			top: 0;
+			left: calc(100% + 1vw);
+			z-index: 20;
+		}
 
 		.post-date,
 		.post-category{
@@ -133,6 +141,10 @@
 
 	.post-top-block{
 		padding: 0.4167vw 0 1.5625vw;
+
+		@media screen and (max-width: 991px){
+			padding-right: 8vw;
+		}
 
 		&.dark,
 		&.green{
@@ -371,6 +383,7 @@
 
 	.post-related-block{
 		padding-bottom: 5.2083vw;
+		padding-top: 2vw;
 
 		.block-caption{
 			margin-bottom: 1.2500vw;

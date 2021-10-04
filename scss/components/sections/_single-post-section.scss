@@ -53,6 +53,14 @@
 		font-size: 0.9375vw;
 		line-height: 1.277;
 		margin-bottom: 0.7813vw;
+		position: relative;
+
+		.post-share{
+			position: absolute;
+			top: 0;
+			left: calc(100% + 1vw);
+			z-index: 20;
+		}
 
 		.post-date,
 		.post-category{
