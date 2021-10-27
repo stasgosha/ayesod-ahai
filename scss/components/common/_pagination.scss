@@ -181,3 +181,26 @@
 }
 
 
+@media(max-width:450px){
+	.page-numbers{
+		li{
+			.page-numbers{
+				font-size: 18px;
+			}
+		}
+	}
+	.page-numbers li .prev.page-numbers:before{
+		top: 0%;
+		transform: translateY(-50%);
+		border-top: 10px solid transparent;
+		border-right: 20px solid #FDD84B;
+		border-bottom: 10px solid transparent
+	}
+	.page-numbers li .next.page-numbers:before{
+		top: 0%;
+		transform: translateY(-50%);
+		border-top: 10px solid transparent;
+		border-left: 20px solid #FDD84B;
+		border-bottom: 10px solid transparent
+	}
+}
